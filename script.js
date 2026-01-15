@@ -16,23 +16,35 @@ type();
 
 // Button Functionality
 
-// GitHub Button
-document.getElementById("githubBtn").addEventListener("click", () => {
-  window.open("https://github.com/ashishapotikar9-bot", "_blank");
+document.addEventListener("DOMContentLoaded", () => {
+
+  const githubBtn = document.getElementById("githubBtn");
+  const resumeBtn = document.getElementById("resumeBtn");
+  const linkedinBtn = document.getElementById("linkedinBtn");
+
+  if (githubBtn) {
+    githubBtn.addEventListener("click", () => {
+      window.open("https://github.com/YOUR_USERNAME", "_blank");
+    });
+  }
+
+  if (resumeBtn) {
+    resumeBtn.addEventListener("click", () => {
+      window.open("assets/resume.pdf", "_blank");
+    });
+  }
+
+  if (linkedinBtn) {
+    linkedinBtn.addEventListener("click", () => {
+      window.open(
+        "https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME/",
+        "_blank"
+      );
+    });
+  }
+
 });
 
-// Resume Button
-document.getElementById("resumeBtn").addEventListener("click", () => {
-  window.open("/AshishPortfolio/resume.pdf", "_blank");
-});
-
-// LinkedIn Button
-document.getElementById("linkedinBtn").addEventListener("click", () => {
-  window.open(
-    "https://www.linkedin.com/in/ashish-apotikar-051981285",
-    "_blank"
-  );
-});
 
 
 // Resume Download Button
