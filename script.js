@@ -27,7 +27,7 @@ document.getElementById("resumeBtn").addEventListener("click", () => {
 });
 
 // LinkedIn Button
-document.getElementById("linkedInBtn").addEventListener("click", () => {
+document.getElementById("LinkedInBtn").addEventListener("click", () => {
   window.open("https://www.linkedin.com/in/ashish-apotikar-051981285","_blank");
 });
 
