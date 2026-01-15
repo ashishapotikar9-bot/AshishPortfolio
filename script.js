@@ -20,12 +20,12 @@ document.getElementById("githubBtn").addEventListener("click", () => {
 });
 
 document.getElementById("resumeBtn").addEventListener("click", () => {
-  window.open("/Users/apple/Downloads/VS Code/portfolio-website/Resume/resume.pdf", "_blank");
+  window.open("/Users/apple/Documents/GitHub/AshishPortfolio/resume.pdf", "_blank");
 });
 
 document.getElementById("resumeBtn").addEventListener("click", () => {
   const link = document.createElement("a");
-  link.href = "/Users/apple/Downloads/VS Code/portfolio-website/Resume/resume.pdf";
+  link.href = "/Users/apple/Documents/GitHub/AshishPortfolio/resume.pdf";
   link.download = "resume.pdf";
   link.click();
 });
