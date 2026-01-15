@@ -37,12 +37,25 @@
     </div>
   </div>
 
-  <form>
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Your Message"></textarea>
-    <button type="submit">Send Message</button>
-  </form>
+  <form 
+  action="https://formsubmit.co/ashishapotikar10@gmail.com" 
+  method="POST"
+>
+  <input type="text" name="name" placeholder="Your Name" required>
+
+  <input type="email" name="email" placeholder="Your Email" required>
+
+  <textarea name="message" placeholder="Your Message" required></textarea>
+
+  <!-- Disable spam -->
+  <input type="hidden" name="_captcha" value="false">
+
+  <!-- Redirect after submit -->
+  <input type="hidden" name="_next" value="https://github.com/ashishapotikar9-botthankyou.html">
+
+  <button type="submit">Send Message</button>
+</form>
+
 
 </div>
 
